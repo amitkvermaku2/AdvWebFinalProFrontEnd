@@ -1,0 +1,44 @@
+
+  <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Order Id</th>
+            <th>Order Time</th>
+            <th>Order Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders">
+            <td>{{order.orderId}}</td>
+            <td>{{order.time}}</td>
+            <td>{{order.date}}</td>
+            <button (click)="toggleDiv(order.orderId)"  class="home-button">Order Detail</button>
+          </tr>
+       
+    </tbody>
+    </table><br>
+      <div *ngIf="showDiv">
+
+          <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of items">
+            <td>{{order.name}}</td>
+            <td>{{order.description}}</td>
+            <td>$ {{order.price}}</td>
+          </tr>
+    </tbody>
+    <a>Total Price: $ {{tprice}} </a>
+    </table><br>
+
+    <a></a>
+
+          </div>
+    

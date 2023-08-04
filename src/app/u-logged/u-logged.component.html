@@ -1,0 +1,19 @@
+
+<header>
+    <h1>Welcome to All In One E-Commerce</h1>
+    <p>|Sell Anything|</p>
+    <p>|Buy Anything|</p>
+  </header>
+<ul class="menu">
+    <li><a (click)="Products()">Products</a></li>
+    <li><a (click)="Update()">Update Profile</a></li>
+    <li><a (click)="Cart()">Your Cart</a></li>
+    <li><a (click)="Order()">Your Orders</a></li>
+  </ul>
+  <br>
+  <button (click)="goToHome()"  class="home-button">Logout</button>
+  <br>
+  <a>Your ID: {{id}}<a> <br><br>
+  <br><br>
+    <ng-container #dynamicComponentContainer></ng-container>
+    

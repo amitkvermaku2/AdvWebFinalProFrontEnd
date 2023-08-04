@@ -1,0 +1,15 @@
+<input type="text" [(ngModel)]="productId" placeholder="Enter ID">
+<button (click)="getProductById()">Get Product</button>
+
+<div class="input-container">
+  <label for="businessNameInput">Product Name:</label>
+  <input type="text" id="businessNameInput" [(ngModel)]="product.name" />
+
+  <label for="businessAddressInput">Product Description:</label>
+  <input type="text" id="businessAddressInput" [(ngModel)]="product.description" />
+
+  <label for="businessContactInput">Product Price:</label>
+  <input type="text" id="businessContactInput" [(ngModel)]="product.price" />
+</div>
+
+<button (click)="updateProfileData()" class="blue-button">Update Profile</button>

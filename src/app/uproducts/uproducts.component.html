@@ -1,0 +1,17 @@
+<div class="product-container">
+  <div *ngFor="let product of product" class="product-item">
+    <h2>Product Name:{{ product.name }}</h2>
+    <hr>
+    <p>Description: {{ product.description }}</p>
+    <hr>
+    <p>Price: ${{ product.price }}</p>
+    
+    <div *ngIf="photoDataUrls[product.idProduct]">
+    <div class="image-cont">
+      <img [src]="photoDataUrls[product.idProduct]" alt="Product Image" class="product-image" />
+      </div>
+      </div>
+    <hr>
+    <button (click)="onProductButtonClick(product.idProduct)" class="blue-button">Add to cart</button>
+  </div>
+</div>

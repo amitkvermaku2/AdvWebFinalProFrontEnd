@@ -1,0 +1,28 @@
+
+<div class="input-container">
+  <label for="businessNameInput">Business Name:</label>
+  <input type="text" id="businessNameInput" [(ngModel)]="profileData.businessName" />
+
+  <label for="businessAddressInput">Address:</label>
+  <input type="text" id="businessAddressInput" [(ngModel)]="profileData.businessAddress" />
+
+  <label for="businessContactInput">Contact:</label>
+  <input type="text" id="businessContactInput" [(ngModel)]="profileData.bContsct" />
+
+  <label for="businessEmailInput">Email:</label>
+  <input type="text" id="businessEmailInput" [(ngModel)]="profileData.bEmail" />
+
+  <label for="businessSSNInput">SSN:</label>
+  <input type="text" id="businessSSNInput" [(ngModel)]="profileData.bSSN" />
+
+  <label for="businessCategoryInput">Category:</label>
+  <input type="text" id="businessCategoryInput" [(ngModel)]="profileData.category" />
+
+  <label for="businessLicenseInput">License:</label>
+  <input type="text" id="businessLicenseInput" [(ngModel)]="profileData.license" />
+
+  <label for="businessPasswordInput">Password:</label>
+  <input type="text" id="businessPasswordInput" [(ngModel)]="profileData.password" />
+</div>
+<br>
+<button (click)="updateProfileData()" class="blue-button">Update Profile</button>

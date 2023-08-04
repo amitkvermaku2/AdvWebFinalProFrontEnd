@@ -1,0 +1,21 @@
+
+  <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of sellers">
+            <td>{{user.idProduct}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.description}}</td>
+            <td>$ {{user.price}}</td>
+          </tr>
+    </tbody>
+    </table><br>
+
+    
